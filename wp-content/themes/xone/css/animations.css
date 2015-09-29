@@ -1,0 +1,157 @@
+/*
+ * Theme animations 
+ */
+ 
+.cover {
+	-webkit-animation: coverAnimation 1s;
+	-moz-animation: coverAnimation 1s;
+	-o-animation: coverAnimation 1s;
+	animation: coverAnimation 1s;
+}
+
+.masthead-brand {
+	-webkit-animation: logoAnimation 1s;
+	-moz-animation: logoAnimation 1s;
+	-o-animation: logoAnimation 1s;
+	animation: logoAnimation 1s;
+}
+
+.inner nav {
+	-webkit-animation: menuAnimation 1s;
+	-moz-animation: menuAnimation 1s;
+	-o-animation: menuAnimation 1s;
+	animation: menuAnimation 1s;
+}
+ 
+ 
+/*
+ * Animate the cover
+ */
+@-webkit-keyframes coverAnimation {
+	0% {
+		margin-top: 100%;
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
+
+@-moz-keyframes coverAnimation {
+	0% {
+		margin-top: 100%;
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
+
+@-o-keyframes coverAnimation {
+	0% {
+		margin-top: 100%;
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
+
+@keyframes coverAnimation {
+	0% {
+		margin-top: 100%;
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
+
+
+
+/*
+ * Animate the logo
+ */
+@-webkit-keyframes logoAnimation {
+	0% {
+		margin-left: -100%;
+	}
+
+	100% {
+		margin-left: 0;
+	}
+}
+
+@-moz-keyframes logoAnimation {
+	0% {
+		margin-left: -100%;
+	}
+
+	100% {
+		margin-left: 0;
+	}
+}
+
+@-o-keyframes logoAnimation {
+	0% {
+		margin-left: -100%;
+	}
+
+	100% {
+		margin-left: 0;
+	}
+}
+
+@keyframes logoAnimation {
+	0% {
+		margin-left: -100%;
+	}
+
+	100% {
+		margin-left: 0;
+	}
+}
+
+
+/*
+ * Animate the menu
+ */
+@-webkit-keyframes menuAnimation {
+	0% {
+		margin-right: -100%;
+	}
+
+	100% {
+		margin-right: 0;
+	}
+}
+
+@-moz-keyframes logoAnimation {
+	0% {
+		margin-right: -100%;
+	}
+
+	100% {
+		margin-right: 0;
+	}
+}
+
+@-o-keyframes logoAnimation {
+	0% {
+		margin-right: -100%;
+	}
+
+	100% {
+		margin-right: 0;
+	}
+}
+
+@keyframes logoAnimation {
+	0% {
+		margin-right: -100%;
+	}
+
+	100% {
+		margin-right: 0;
+	}
+}
