@@ -12,9 +12,18 @@
  * the parent theme's file, so the child theme functions would be used.
  */
 
+function register_evenstar_menus(){
+	register_nav_menus(array(
+		'top-menu' => __('Top Menu', 'evenstar'),
+		)
+	);
+}
+
+add_action('init', 'register_evenstar_menus');
+
 function register_scripts() {
 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css' );
-	wp_enqueue_style( 'animation', get_stylesheet_directory_uri() . '/css/animation.css' );
+	wp_enqueue_style( 'animation', get_stylesheet_directory_uri() . '/css/animations.css' );
 	wp_enqueue_style( 'theme_styles', get_stylesheet_uri() );
 
 	wp_deregister_script('jquery');
@@ -37,4 +46,3 @@ remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'feed_links_extra', 3 );
-?>

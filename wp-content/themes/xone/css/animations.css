@@ -126,7 +126,7 @@
 	}
 }
 
-@-moz-keyframes logoAnimation {
+@-moz-keyframes menuAnimation {
 	0% {
 		margin-right: -100%;
 	}
@@ -136,7 +136,7 @@
 	}
 }
 
-@-o-keyframes logoAnimation {
+@-o-keyframes menuAnimation {
 	0% {
 		margin-right: -100%;
 	}
@@ -146,7 +146,7 @@
 	}
 }
 
-@keyframes logoAnimation {
+@keyframes menuAnimation {
 	0% {
 		margin-right: -100%;
 	}

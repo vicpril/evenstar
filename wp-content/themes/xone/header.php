@@ -1,15 +1,15 @@
 
 <!DOCTYPE html>
-<html <?php language_atributes(); ?>>
+<html <?php language_attributes(); ?>>
   <head>
-    <meta charset="<?php blog_incccccccccccccccccccccccccccfo('charset'); ?>">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="author" content="">
     <link rel="icon" href="images/icons/favicon.ico">
 
-    <title>Evenstar</title>
+    <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -20,7 +20,7 @@
     <?php wp_head(); ?>
   </head>
 
-  <body>
+  <body <?php body_class(); ?>>
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
@@ -29,15 +29,16 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">evenstar</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Clients</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
+              <h3 class="masthead-brand"><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h3>
+
+              <?php 
+              wp_nav_menu(array(
+                    'theme_location' => 'top-menu',
+                    'container' => 'nav',
+                    'container_class' => 'es-nav',
+                    'menu_class' => 'nav masthead-nav',
+              ))
+              ?>
+
             </div>
           </div>
